@@ -14,7 +14,7 @@ const Notes: React.FunctionComponent<INotesProps> = ({ note, handleDelete }) => 
             <Card.Title>{ note.title }</Card.Title>
             <Card.Text>{ note.text }</Card.Text>
             <Card.Subtitle className='text-muted'>{ note.date }</Card.Subtitle>
-            <Button className='mt-3' variant='danger' onClick={() => handleDelete( note.id) }>Delete</Button>
+            <Button className='mt-3 mb-2 ' variant='danger' onClick={() => handleDelete(note.id) }>Delete</Button>
         </Card>
     </div>
   );
